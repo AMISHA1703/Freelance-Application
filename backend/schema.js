@@ -53,16 +53,3 @@ module.exports = { User, Project, Application, Chat, Freelancer };
 
 
 
-// Set up a MongoDB database (locally or using a cloud service like MongoDB Atlas).
-
-// Create collections for:
-
-// Users (storing user information, account type)
-
-// Projects (project details, budget, skills required)
-
-// Applications (freelancer proposals, rate, portfolio link)
-
-// Chat (communication history for each project)
-
-// Freelancer (extended user details with skills, experience, ratings)
