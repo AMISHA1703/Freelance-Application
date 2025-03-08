@@ -48,27 +48,27 @@ This is a full-stack freelance platform built using the MERN (MongoDB, Express.j
 1.  **Clone the repository:**
 
     ```bash
-    git clone [YOUR_REPOSITORY_URL]
-    cd [YOUR_PROJECT_DIRECTORY]
+    git clone https://github.com/AMISHA1703/Freelance-Application.git
+    cd Freelance-Application
     ```
 
 2.  **Install backend dependencies:**
 
     ```bash
-    cd backend
+    cd server
     npm install # or yarn install
     ```
 
 3.  **Install frontend dependencies:**
 
     ```bash
-    cd ../frontend
+    cd ../client
     npm install # or yarn install
     ```
 
 4.  **Configure environment variables:**
 
-    * Create a `.env` file in the `backend` directory with the following variables:
+    * Create a `.env` file in the `server` directory with the following variables:
 
         ```
         PORT=5000
@@ -77,25 +77,19 @@ This is a full-stack freelance platform built using the MERN (MongoDB, Express.j
         # Add Stripe/PayPal keys if using payment integration
         STRIPE_SECRET_KEY=your_stripe_secret
         ```
-    * Create a `.env.local` file in the `frontend` directory.
+    
 
-        ```
-        REACT_APP_API_URL=http://localhost:5000
-        # Add Stripe/Paypal public keys if needed.
-        REACT_APP_STRIPE_PUBLIC_KEY=your_stripe_public
-        ```
-
-5.  **Start the backend server:**
+5.  **Start the  server:**
 
     ```bash
-    cd ../backend
+    cd ../server
     npm run dev # or node server.js
     ```
 
 6.  **Start the frontend development server:**
 
     ```bash
-    cd ../frontend
+    cd ../client
     npm start
     ```
 
@@ -105,14 +99,8 @@ This is a full-stack freelance platform built using the MERN (MongoDB, Express.j
 
 ## Deployment
 
-1.  **Build the frontend:**
 
-    ```bash
-    cd frontend
-    npm run build
-    ```
-
-2.  **Deploy the backend and frontend:**
+1.  **Deploy the backend and frontend:**
 
     * You can deploy the backend to platforms like Heroku, AWS, or DigitalOcean.
     * The built frontend files can be served using a static file server like Nginx or deployed to platforms like Netlify or Vercel.
